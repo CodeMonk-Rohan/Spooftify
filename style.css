@@ -7,6 +7,7 @@ body{
   margin: 0;
   background-color: black;
   color: white;
+  overflow: hidden;
 }
 
 .main{
@@ -27,6 +28,9 @@ body{
     flex: 1;
     background-color: #121212;
     border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+
 }
 
 .player{
@@ -117,4 +121,100 @@ a{
     height: 2rem;
     width: fit-content;
     margin-top: 0.5rem;
+}
+
+.sticky-nav{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    background-color: #121212;
+    border-radius: 0.1rem;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+}
+
+.sticky-nav-icons{
+    margin-left: 0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+
+}
+.nav-item{
+    margin-right: 1.5rem;
+}
+.darkbadge{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.card-layout{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem; 
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+.card-space{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.album-art{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.footer{
+    height: 250px;
+}
+
+.player{
+    display: flex;
+    padding: 0 1rem 0 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.song-detail{
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+.song-name-artist{
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 0 1rem;
+}
+.song-name-artist p{
+    margin: 0 0 0.25rem 0;
+}
+.song-detail i{
+    margin-right: 1rem;
+}
+.player-layout{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls{
+    width: 25%;
+}
+.player-controls-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    justify-content: center;
+    align-items: center;
 }
